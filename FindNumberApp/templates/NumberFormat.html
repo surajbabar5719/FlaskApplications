@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>FIND THE NUMBER</title>
+        <body>
+            <form accept="{{ url_for("displayApp") }}" method="post">
+                <label for="num">TYPE YOUR NUMBER</label>
+                <input type="number" id="num" name="number">
+                <br>
+                <button type="submit">CHECK NUMBER</button>
+                <br>
+                <div>{{ STRING_PLACEHOLDER_HTML }} </div>
+                <br>
+                <div>ATTEMPT NUMBER : {{ ATTEMPT_NUMBER }} </div>           
+            </form>
+        </body>
+    </head>
+</html>
