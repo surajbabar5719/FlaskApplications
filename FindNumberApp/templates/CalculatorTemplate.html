@@ -1,0 +1,28 @@
+<!-- 
+
+<html>
+    <head>
+        <title>BASIC CALCULATOR</title> -->
+        <!-- <body> -->
+        {% extends 'HomePage.html' %}
+        {% block content %}
+            <form accept="{{ url_for("calculator") }}" method="post">
+                <label for="first_number">FIRST NUMBER</label>
+                <input type="number" id="num" name="first_number">
+                <br>
+                <label for="second_number">SECOND NUMBER</label>
+                <input type="number" id="num" name="second_number">
+                <br>
+                <button type="submit" name="ACTION" value="ADD"> + </button>
+                <br>
+                <button type="submit" name="ACTION"  value="SUB"> - </button>
+                <br>
+                <button type="submit" name="ACTION"  value="MUL"> * </button>
+                <br>
+                <button type="submit" name="ACTION"  value="DIV"> / </button>        
+            </form>
+            <div> RESULT : {{ RESULT }}</div>
+        {% endblock %}
+        <!-- </body>
+    </head>
+</html> -->

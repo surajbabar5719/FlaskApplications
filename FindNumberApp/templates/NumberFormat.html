@@ -1,7 +1,9 @@
-<html>
+<!-- <html>
     <head>
         <title>FIND THE NUMBER</title>
-        <body>
+        <body> -->
+        {% extends 'HomePage.html' %}
+        {% block content %}
             <form accept="{{ url_for("displayApp") }}" method="post">
                 <label for="num">TYPE YOUR NUMBER</label>
                 <input type="number" id="num" name="number">
@@ -12,6 +14,7 @@
                 <br>
                 <div>ATTEMPT NUMBER : {{ ATTEMPT_NUMBER }} </div>           
             </form>
-        </body>
+        {% endblock %}
+        <!-- </body>
     </head>
-</html>
+</html> -->
